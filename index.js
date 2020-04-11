@@ -4,16 +4,33 @@ let folder = 'a'
 
 $.getJSON( folder + "/texts.json", function( data ) {
     pages = data.texts
-    showPage(0)
+    largestSumOfLevel = 0
+    for (page of pages){
+        if (page.levels != undefined)
+            largestSumOfLevel = Math.max(largestSumOfLevel, page.levels.length)
+    }
+    $("#slider").attr('max',largestSumOfLevel-1)
+    showTwoPage(0)
   });
 
-function showPage(pageNum){
-    page = pageNum
-    $("#pageImage").attr("src",folder + "/" + pages[pageNum].image);
-    $("#pageImage").on('load',()=>{
-        $("#slidecontainer").css('width',$("#pageImage").css('width'))
-        $("#slidecontainer").css('width',$("#pageImage").css('width'))
-    })
+function showTwoPage(pageIndex){
+    page = pageIndex
+    $('#sideRight').show()
+    $('#sideLeft').show()
+    if (pageIndex==0){
+        $('#sideRight').hide()
+        showPage(0,"Left")
+    } else if (pageIndex == pages.length){
+        $('#sideLeft').hide()
+        showPage(pageIndex,"Right")
+    } else {
+        showPage(pageIndex,"Right")
+        showPage(pageIndex+1,"Left")
+    }
+}
+
+function showPage(pageNum, side){
+    $("#pageImage"+side).attr("src",folder + "/" + pages[pageNum].image);
 
     txt = pages[pageNum].text
     txtParts = []
@@ -62,31 +79,21 @@ function showPage(pageNum){
         }
         txtHtml += " "
     })
-    $("#text").html(txtHtml)
-
-    if (pages[pageNum].levels == undefined){
-        $("#slider").hide()
-    } else {
-        $("#slider").show()
-        $("#slider").attr('max',pages[pageNum].levels.length-1)
-        if ($("#slider").val() > pages[pageNum].levels.length-1){
-            $("#slider").val(pages[pageNum].levels.length-1)
-        }
-    }
+    $("#text"+side).html(txtHtml)
 }
 
 updateSlider = ()=>{
-    showPage(page)
+    showTwoPage(page)
 }
 
 
 $(document).keydown(function(e) {
     if (e.which == 37){
-        page = (page+1) % pages.length
-        showPage(page)
+        page = (page+2) % pages.length
+        showTwoPage(page)
     } else if (e.which==39){
-        page = (page-1+pages.length) % pages.length
-        showPage(page)
+        page = (page-2+pages.length) % pages.length
+        showTwoPage(page)
     }
     e.preventDefault(); // prevent the default action (scroll / move caret)
 });

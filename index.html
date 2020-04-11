@@ -9,10 +9,16 @@
 </head>
 <body>
     <div id=container>
-        <img id=pageImage />
-        <div id=text></div>
-        <div id=slidecontainer>
-            <input type=range min=-1 max=3 value=-1 step=1 id=slider oninput="updateSlider()">
+        <div id=sideRight class=side>
+            <img id=pageImageRight class=pageImage />
+            <div id=textRight class=text ></div>
+        </div>
+        <div id=sideLeft class=side >
+            <img id=pageImageLeft class=pageImage />
+            <div id=textLeft class=text ></div>
+        </div>
+        <div id=slidecontainer >
+            <input id=slider type=range min=-1 max=3 value=-1 step=1 oninput="updateSlider()">
         </div>
     </div>
 </body>
