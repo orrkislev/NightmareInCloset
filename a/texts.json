@@ -1,723 +1,617 @@
-{  
-    "texts":[
-		{
-            "image" : "01.jpg",
-            "text" : "פחדרון בארון. כתב וצייר: מרסר מאייר"
-        },
+{
+    "texts": [
         {
-            "image" : "02.jpg",
-            "text" : "היה לי פעם פחדרון בארון." ,
-            "levels" : [
-                [
-                    {
-                        "phrase" : "ארון",
-                        "heb" : "קלוזט",
-                        "eng" : "closet"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "היה לי פעם",
-                        "heb" : "איי וואנס הד א",
-                        "eng" : "I once had a"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "ארון",
-                        "heb" : "קלוזט",
-                        "eng" : "closet"
+
+        },{
+            "image": "01.jpg",
+            "text": "פחדרון בארון. כתב וצייר: מרסר מאייר"
+        },{
+            "image": "02.jpg",
+            "text": "היה לי פעם פחדרון בארון.",
+            "levels": [
+                [{
+                    "phrase": "ארון",
+                    "heb": "קלוזט",
+                    "eng": "closet"
+                }],
+                [{
+                    "phrase": "היה לי פעם",
+                    "heb": "איי וואנס הד א",
+                    "eng": "I once had a"
+                }],
+                [{
+                        "phrase": "ארון",
+                        "heb": "קלוזט",
+                        "eng": "closet"
                     },
                     {
-                        "phrase" : "היה לי פעם",
-                        "heb" : "איי וואנס הד",
-                        "eng" : "I once had"
-                    }
-                ]
-            ]
-        },
-		{
-            "image" : "03.jpg"
-        },
-        {
-            "image" : "04.jpg",
-            "text" : "בלילה, לפני שהלכתי לישון." ,
-            "levels" : [
-                [
-                    {
-                        "phrase" : "לילה",
-                        "heb" : "נייט",
-                        "eng" : "night"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "לישון",
-                        "heb" : "טו סליפ",
-                        "eng" : "to sleep"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "לילה",
-                        "heb" : "נייט",
-                        "eng" : "night"
-                    },
-                    {
-                        "phrase" : "לישון",
-                        "heb" : "טו סליפ",
-                        "eng" : "to sleep"
-                    }
-                ],
-				[
-                    {
-                        "phrase" : "לילה, לפני",
-                        "heb" : "נייט, ביפור",
-                        "eng" : "night, before"
-                    },
-                    {
-                        "phrase" : "לישון",
-                        "heb" : "טו סליפ",
-                        "eng" : "to sleep"
+                        "phrase": "היה לי פעם",
+                        "heb": "איי וואנס הד",
+                        "eng": "I once had"
                     }
                 ]
             ]
         },
         {
-            "image" : "05.jpg",
-            "text" : "הייתי סוגר תמיד את הדלת של הארון." ,
-            "levels" : 
-			[
-                [
+            "image": "03.jpg"
+        },
+        {
+            "image": "04.jpg",
+            "text": "בלילה, לפני שהלכתי לישון.",
+            "levels": [
+                [{
+                    "phrase": "לילה",
+                    "heb": "נייט",
+                    "eng": "night"
+                }],
+                [{
+                    "phrase": "לישון",
+                    "heb": "טו סליפ",
+                    "eng": "to sleep"
+                }],
+                [{
+                        "phrase": "לילה",
+                        "heb": "נייט",
+                        "eng": "night"
+                    },
                     {
-                        "phrase" : "דלת",
-                        "heb" : "דור",
-                        "eng" : "door"
+                        "phrase": "לישון",
+                        "heb": "טו סליפ",
+                        "eng": "to sleep"
                     }
                 ],
-                [
-                    {
-                        "phrase" : "דלת",
-                        "heb" : "דור",
-                        "eng" : "door"
+                [{
+                        "phrase": "לילה, לפני",
+                        "heb": "נייט, ביפור",
+                        "eng": "night, before"
                     },
-					{
-                        "phrase" : "ארון",
-                        "heb" : "קלוזט",
-                        "eng" : "closet"
+                    {
+                        "phrase": "לישון",
+                        "heb": "טו סליפ",
+                        "eng": "to sleep"
                     }
                 ]
             ]
         },
         {
-            "image" : "06.jpg",
-            "text" : "אפילו פחדתי להסתובב ולהביט." ,
-            "levels" : 
-			[
-                [
-                    {
-                        "phrase" : "ולהביט",
-                        "heb" : "אנד לוק",
-                        "eng" : "and look"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "להסתובב",
-                        "heb" : "טו טרנד אראונד",
-                        "eng" : "to turn around"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "להסתובב ולהביט",
-                        "heb" : "טו טרנר ארונד אנד לוק",
-                        "eng" : "to turn around and look"
-                    }
-                ]
-            ]
-        },
-		{
-            "image" : "07.jpg"
-        },
-        {
-            "image" : "08.jpg",
-            "text" : "אבל כששכבתי במיטה, הייתי מציץ." ,
-            "levels" : 
-			[
-                [
-                    {
-                        "phrase" : "מיטה",
-                        "heb" : "בד",
-                        "eng" : "bed"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "אבל",
-                        "heb" : "בט",
-                        "eng" : "but"
-                    },
-					{
-                        "phrase" : "מיטה",
-                        "heb" : "בד",
-                        "eng" : "bed"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "אבל",
-                        "heb" : "בט",
-                        "eng" : "but"
+            "image": "05.jpg",
+            "text": "הייתי סוגר תמיד את הדלת של הארון.",
+            "levels": [
+                [{
+                    "phrase": "דלת",
+                    "heb": "דור",
+                    "eng": "door"
+                }],
+                [{
+                        "phrase": "דלת",
+                        "heb": "דור",
+                        "eng": "door"
                     },
                     {
-                        "phrase" : "מיטה",
-                        "heb" : "בד",
-                        "eng" : "bed"
-                    },
-					{
-                        "phrase" : "מציץ",
-                        "heb" : "סניקינג א-פיק",
-                        "eng" : "sneeking a peak"
+                        "phrase": "ארון",
+                        "heb": "קלוזט",
+                        "eng": "closet"
                     }
                 ]
             ]
         },
         {
-            "image" : "09.jpg",
-            "text" : "לפעמים." ,
-            "levels" : 
-			[
-                [
+            "image": "06.jpg",
+            "text": "אפילו פחדתי להסתובב ולהביט.",
+            "levels": [
+                [{
+                    "phrase": "ולהביט",
+                    "heb": "אנד לוק",
+                    "eng": "and look"
+                }],
+                [{
+                    "phrase": "להסתובב",
+                    "heb": "טו טרנד אראונד",
+                    "eng": "to turn around"
+                }],
+                [{
+                    "phrase": "להסתובב ולהביט",
+                    "heb": "טו טרנר ארונד אנד לוק",
+                    "eng": "to turn around and look"
+                }]
+            ]
+        },
+        {
+            "image": "07.jpg"
+        },
+        {
+            "image": "08.jpg",
+            "text": "אבל כששכבתי במיטה, הייתי מציץ.",
+            "levels": [
+                [{
+                    "phrase": "מיטה",
+                    "heb": "בד",
+                    "eng": "bed"
+                }],
+                [{
+                        "phrase": "אבל",
+                        "heb": "בט",
+                        "eng": "but"
+                    },
                     {
-                        "phrase" : "לפעמים",
-                        "heb" : "סאמטיימז",
-                        "eng" : "sometimes"
+                        "phrase": "מיטה",
+                        "heb": "בד",
+                        "eng": "bed"
+                    }
+                ],
+                [{
+                        "phrase": "אבל",
+                        "heb": "בט",
+                        "eng": "but"
+                    },
+                    {
+                        "phrase": "מיטה",
+                        "heb": "בד",
+                        "eng": "bed"
+                    },
+                    {
+                        "phrase": "מציץ",
+                        "heb": "סניקינג א-פיק",
+                        "eng": "sneeking a peak"
                     }
                 ]
             ]
         },
         {
-            "image" : "10.jpg",
-            "text" : "לילה אחד החלטתי שאני מוכרח להפטר מהפחדרון." ,
-            "levels" : 
-			[
-                [
-                    {
-                        "phrase" : "לילה אחד",
-                        "heb" : "וואן נייט",
-                        "eng" : "one night"
-                    }
-                ],
-                [
-                    {
-                       "phrase" : "לילה אחד",
-                        "heb" : "וואן נייט",
-                        "eng" : "one night"
-                    },
-					{
-                        "phrase" : "מוכרח",
-                        "heb" : "מאסט",
-                        "eng" : "must"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "לילה אחד",
-                        "heb" : "וואן נייט",
-                        "eng" : "one night"
-                    },
-                    {
-                        "phrase" : "מוכרח",
-                        "heb" : "מאסט",
-                        "eng" : "must"
-                    },
-					{
-                        "phrase" : "להפטר",
-                        "heb" : "גט ריד",
-                        "eng" : "get rid"
-                    }
-                ]
+            "image": "09.jpg",
+            "text": "לפעמים.",
+            "levels": [
+                [{
+                    "phrase": "לפעמים",
+                    "heb": "סאמטיימז",
+                    "eng": "sometimes"
+                }]
             ]
         },
-		{
-            "image" : "11.jpg"
-        },
         {
-            "image" : "12.jpg",
-            "text" : "רק נעשה חושך, שמעתי אותו מתקרב אלי." ,
-            "levels" : 
-			[
-                [
+            "image": "10.jpg",
+            "text": "לילה אחד החלטתי שאני מוכרח להפטר מהפחדרון.",
+            "levels": [
+                [{
+                    "phrase": "לילה אחד",
+                    "heb": "וואן נייט",
+                    "eng": "one night"
+                }],
+                [{
+                        "phrase": "לילה אחד",
+                        "heb": "וואן נייט",
+                        "eng": "one night"
+                    },
                     {
-                        "phrase" : "חושך",
-                        "heb" : "דארק",
-                        "eng" : "dark"
+                        "phrase": "מוכרח",
+                        "heb": "מאסט",
+                        "eng": "must"
                     }
                 ],
-                [
-                    {
-                       "phrase" : "חושך",
-                        "heb" : "דארק",
-                        "eng" : "dark"
-                    },
-					{
-                        "phrase" : "מתקרב אלי",
-                        "heb" : "אפרוצ'ינג",
-                        "eng" : "approaching"
-                    }
-                ]
-            ]
-        },
-		{
-            "image" : "13.jpg"
-        },
-        {
-            "image" : "14.jpg",
-            "text" : "אז הדלקתי את האור ותפסתי אותו יושב על המיטה שלי." ,
-            "levels" : 
-			[
-                [
-                    {
-                        "phrase" : "אור",
-                        "heb" : "לייט",
-                        "eng" : "light"
-                    },
-					{
-                        "phrase" : "מיטה",
-                        "heb" : "בד",
-                        "eng" : "bed"
-                    }
-                ],
-                [
-                    {
-                       "phrase" : "הדלקתי",
-                        "heb" : "איי טרנד און",
-                        "eng" : "I turned on"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "הדלקתי",
-                        "heb" : "איי טרנד און",
-                        "eng" : "I turned on"
+                [{
+                        "phrase": "לילה אחד",
+                        "heb": "וואן נייט",
+                        "eng": "one night"
                     },
                     {
-                        "phrase" : "אור",
-                        "heb" : "לייט",
-                        "eng" : "light"
+                        "phrase": "מוכרח",
+                        "heb": "מאסט",
+                        "eng": "must"
                     },
-					{
-                        "phrase" : "מיטה",
-                        "heb" : "בד",
-                        "eng" : "bed"
+                    {
+                        "phrase": "להפטר",
+                        "heb": "גט ריד",
+                        "eng": "get rid"
                     }
                 ]
             ]
         },
         {
-            "image" : "15.jpg",
-            "text" : "'לך מפה, פחדרון, או שאני יורה בך,' אמרתי." ,
-            "levels" : 
-			[
-                [
-                    {
-                        "phrase" : "לך מפה",
-                        "heb" : "גו אווי",
-                        "eng" : "go away"
-                    }
-                ],
-                [
-                    {
-                       "phrase" : "לך מפה",
-                        "heb" : "גו אווי",
-                        "eng" : "go away"
-                    },
-					{
-                       "phrase" : "או",
-                        "heb" : "אור אלס",
-                        "eng" : "or else"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "לך מפה",
-                        "heb" : "גו אווי",
-                        "eng" : "go away"
+            "image": "11.jpg"
+        },
+        {
+            "image": "12.jpg",
+            "text": "רק נעשה חושך, שמעתי אותו מתקרב אלי.",
+            "levels": [
+                [{
+                    "phrase": "חושך",
+                    "heb": "דארק",
+                    "eng": "dark"
+                }],
+                [{
+                        "phrase": "חושך",
+                        "heb": "דארק",
+                        "eng": "dark"
                     },
                     {
-                        "phrase" : "או",
-                        "heb" : "אור אלס",
-                        "eng" : "or else"
-                    },
-					{
-                        "phrase" : "יורה בך",
-                        "heb" : "גואינג טו שוט יו",
-                        "eng" : "going to shoot you"
+                        "phrase": "מתקרב אלי",
+                        "heb": "אפרוצ'ינג",
+                        "eng": "approaching"
                     }
                 ]
             ]
         },
         {
-            "image" : "16.jpg",
-            "text" : "יריתי בו." ,
-            "levels" : 
-			[
-                [
+            "image": "13.jpg"
+        },
+        {
+            "image": "14.jpg",
+            "text": "אז הדלקתי את האור ותפסתי אותו יושב על המיטה שלי.",
+            "levels": [
+                [{
+                        "phrase": "אור",
+                        "heb": "לייט",
+                        "eng": "light"
+                    },
                     {
-                        "phrase" : "בו",
-                        "heb" : "הים",
-                        "eng" : "him"
+                        "phrase": "מיטה",
+                        "heb": "בד",
+                        "eng": "bed"
                     }
                 ],
-                [
+                [{
+                    "phrase": "הדלקתי",
+                    "heb": "איי טרנד און",
+                    "eng": "I turned on"
+                }],
+                [{
+                        "phrase": "הדלקתי",
+                        "heb": "איי טרנד און",
+                        "eng": "I turned on"
+                    },
                     {
-                       "phrase" : "יריתי",
-                        "heb" : "איי שוט",
-                        "eng" : "I shot"
-                    }
-                ],
-                [
+                        "phrase": "אור",
+                        "heb": "לייט",
+                        "eng": "light"
+                    },
                     {
-                        "phrase" : "יריתי בו",
-                        "heb" : "איי שוט הים",
-                        "eng" : "I shot him"
+                        "phrase": "מיטה",
+                        "heb": "בד",
+                        "eng": "bed"
                     }
                 ]
             ]
         },
         {
-            "image" : "17.jpg",
-            "text" : "הפחדרון התחיל לבכות." ,
-            "levels" : 
-			[
-                [
+            "image": "15.jpg",
+            "text": "'לך מפה, פחדרון, או שאני יורה בך,' אמרתי.",
+            "levels": [
+                [{
+                    "phrase": "לך מפה",
+                    "heb": "גו אווי",
+                    "eng": "go away"
+                }],
+                [{
+                        "phrase": "לך מפה",
+                        "heb": "גו אווי",
+                        "eng": "go away"
+                    },
                     {
-                        "phrase" : "לבכות",
-                        "heb" : "טו קריי",
-                        "eng" : "to cry"
+                        "phrase": "או",
+                        "heb": "אור אלס",
+                        "eng": "or else"
                     }
                 ],
-                [
+                [{
+                        "phrase": "לך מפה",
+                        "heb": "גו אווי",
+                        "eng": "go away"
+                    },
                     {
-                       "phrase" : "התחיל",
-                        "heb" : "סטראטד",
-                        "eng" : "started"
-                    }
-                ],
-                [
+                        "phrase": "או",
+                        "heb": "אור אלס",
+                        "eng": "or else"
+                    },
                     {
-                        "phrase" : "התחיל לבכות",
-                        "heb" : "סטראטד טו קריי",
-                        "eng" : "started to cry"
+                        "phrase": "יורה בך",
+                        "heb": "גואינג טו שוט יו",
+                        "eng": "going to shoot you"
                     }
                 ]
             ]
         },
         {
-            "image" : "18.jpg",
-            "text" : "נעשיתי כועס." ,
-            "levels" : 
-			[
-                [
+            "image": "16.jpg",
+            "text": "יריתי בו.",
+            "levels": [
+                [{
+                    "phrase": "בו",
+                    "heb": "הים",
+                    "eng": "him"
+                }],
+                [{
+                    "phrase": "יריתי",
+                    "heb": "איי שוט",
+                    "eng": "I shot"
+                }],
+                [{
+                    "phrase": "יריתי בו",
+                    "heb": "איי שוט הים",
+                    "eng": "I shot him"
+                }]
+            ]
+        },
+        {
+            "image": "17.jpg",
+            "text": "הפחדרון התחיל לבכות.",
+            "levels": [
+                [{
+                    "phrase": "לבכות",
+                    "heb": "טו קריי",
+                    "eng": "to cry"
+                }],
+                [{
+                    "phrase": "התחיל",
+                    "heb": "סטראטד",
+                    "eng": "started"
+                }],
+                [{
+                    "phrase": "התחיל לבכות",
+                    "heb": "סטראטד טו קריי",
+                    "eng": "started to cry"
+                }]
+            ]
+        },
+        {
+            "image": "18.jpg",
+            "text": "נעשיתי כועס.",
+            "levels": [
+                [{
+                    "phrase": "כועס",
+                    "heb": "מד",
+                    "eng": "mad"
+                }],
+                [{
+                    "phrase": "נעשיתי",
+                    "heb": "איי גוט",
+                    "eng": "I got"
+                }],
+                [{
+                    "phrase": "נעשיתי כועס",
+                    "heb": "איי גוט מד",
+                    "eng": "I got mad"
+                }]
+            ]
+        },
+        {
+            "image": "19.jpg",
+            "text": "אבל לא יותר מדי.",
+            "levels": [
+                [{
+                    "phrase": "יותר מדי",
+                    "heb": "טו מאץ'",
+                    "eng": "too much"
+                }],
+                [{
+                    "phrase": "אבל",
+                    "heb": "בט",
+                    "eng": "but"
+                }],
+                [{
+                    "phrase": "אבל לא",
+                    "heb": "בט נוט",
+                    "eng": "but not"
+                }],
+                [{
+                    "phrase": "אבל לא יותר מדי",
+                    "heb": "בט נוט נו מאץ'",
+                    "eng": "but not too much"
+                }]
+            ]
+        },
+        {
+            "image": "20.jpg",
+            "text": "'פחדרון, שתוק, אתה תעיר את אבא ואמא', אמרתי.",
+            "levels": [
+                [{
+                        "phrase": "אבא",
+                        "heb": "דד",
+                        "eng": "dad"
+                    },
                     {
-                        "phrase" : "כועס",
-                        "heb" : "מד",
-                        "eng" : "mad"
+                        "phrase": "אמא",
+                        "heb": "מומ",
+                        "eng": "mom"
                     }
                 ],
-                [
+                [{
+                        "phrase": "שתוק",
+                        "heb": "שט אפ",
+                        "eng": "shut up"
+                    },
                     {
-                       "phrase" : "נעשיתי",
-                        "heb" : "איי גוט",
-                        "eng" : "I got"
+                        "phrase": "אבא",
+                        "heb": "דד",
+                        "eng": "dad"
+                    },
+                    {
+                        "phrase": "אמא",
+                        "heb": "מומ",
+                        "eng": "mom"
                     }
                 ],
-                [
+                [{
+                        "phrase": "שתוק, אתה תעיר",
+                        "heb": "שט אפ, יו וויל ווייק אפ",
+                        "eng": "shut up, you will wake up"
+                    },
                     {
-                        "phrase" : "נעשיתי כועס",
-                        "heb" : "איי גוט מד",
-                        "eng" : "I got mad"
+                        "phrase": "אבא",
+                        "heb": "דד",
+                        "eng": "dad"
+                    },
+                    {
+                        "phrase": "אמא",
+                        "heb": "מומ",
+                        "eng": "mom"
                     }
                 ]
             ]
         },
         {
-            "image" : "19.jpg",
-            "text" : "אבל לא יותר מדי." ,
-            "levels" : 
-			[
-                [
+            "image": "21.jpg",
+            "text": "הוא לא הפסיק לבכות, אז לקחתי אותו ביד.",
+            "levels": [
+                [{
+                    "phrase": "לבכות",
+                    "heb": "קריינג",
+                    "eng": "crying"
+                }],
+                [{
+                        "phrase": "לבכות",
+                        "heb": "קריינג",
+                        "eng": "crying"
+                    },
                     {
-                        "phrase" : "יותר מדי",
-                        "heb" : "טו מאץ'",
-                        "eng" : "too much"
+                        "phrase": "יד",
+                        "heb": "הנד",
+                        "eng": "hand"
                     }
                 ],
-                [
+                [{
+                        "phrase": "לא הפסיק לבכות",
+                        "heb": "דידנט סטופ קריינג",
+                        "eng": "didn't stop crying"
+                    },
                     {
-                       "phrase" : "אבל",
-                        "heb" : "בט",
-                        "eng" : "but"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "אבל לא",
-                        "heb" : "בט נוט",
-                        "eng" : "but not"
-                    }
-                ],
-				[
-                    {
-                        "phrase" : "אבל לא יותר מדי",
-                        "heb" : "בט נוט נו מאץ'",
-                        "eng" : "but not too much"
+                        "phrase": "יד",
+                        "heb": "הנד",
+                        "eng": "hand"
                     }
                 ]
             ]
         },
         {
-            "image" : "20.jpg",
-            "text" : "'פחדרון, שתוק, אתה תעיר את אבא ואמא', אמרתי." ,
-            "levels" : 
-			[
-                [
+            "image": "22.jpg",
+            "text": "הכנסתי אותו למיטה שלי.",
+            "levels": [
+                [{
+                    "phrase": "מיטה",
+                    "heb": "בד",
+                    "eng": "bed"
+                }],
+                [{
+                    "phrase": "מיטה שלי",
+                    "heb": "מיי בד",
+                    "eng": "my bed"
+                }],
+                [{
+                        "phrase": "אותו",
+                        "heb": "הים",
+                        "eng": "him"
+                    },
                     {
-                        "phrase" : "אבא",
-                        "heb" : "דד",
-                        "eng" : "dad"
-                    },
-					{
-                        "phrase" : "אמא",
-                        "heb" : "מומ",
-                        "eng" : "mom"
-                    }
-                ],
-                [
-                    {
-                       "phrase" : "שתוק",
-                        "heb" : "שט אפ",
-                        "eng" : "shut up"
-                    },
-					{
-                        "phrase" : "אבא",
-                        "heb" : "דד",
-                        "eng" : "dad"
-                    },
-					{
-                        "phrase" : "אמא",
-                        "heb" : "מומ",
-                        "eng" : "mom"
-                    }
-                ],
-                [
-                    {
-                       "phrase" : "שתוק, אתה תעיר",
-                        "heb" : "שט אפ, יו וויל ווייק אפ",
-                        "eng" : "shut up, you will wake up"
-                    },
-					{
-                        "phrase" : "אבא",
-                        "heb" : "דד",
-                        "eng" : "dad"
-                    },
-					{
-                        "phrase" : "אמא",
-                        "heb" : "מומ",
-                        "eng" : "mom"
+                        "phrase": "מיטה שלי",
+                        "heb": "מיי בד",
+                        "eng": "my bed"
                     }
                 ]
             ]
         },
         {
-            "image" : "21.jpg",
-            "text" : "הוא לא הפסיק לבכות, אז לקחתי אותו ביד." ,
-            "levels" : 
-			[
-                [
-                    {
-                        "phrase" : "לבכות",
-                        "heb" : "קריינג",
-                        "eng" : "crying"
-                    }
-                ],
-                [
-                    {
-                       "phrase" : "לבכות",
-                        "heb" : "קריינג",
-                        "eng" : "crying"
+            "image": "23.jpg"
+        },
+        {
+            "image": "24.jpg",
+            "text": "וסגרתי את הדלת של הארון.",
+            "levels": [
+                [{
+                    "phrase": "דלת",
+                    "heb": "דור",
+                    "eng": "door"
+                }],
+                [{
+                        "phrase": "דלת",
+                        "heb": "דור",
+                        "eng": "door"
                     },
-					{
-                        "phrase" : "יד",
-                        "heb" : "הנד",
-                        "eng" : "hand"
-                    }
-                ],
-                [
                     {
-                       "phrase" : "לא הפסיק לבכות",
-                        "heb" : "דידנט סטופ קריינג",
-                        "eng" : "didn't stop crying"
-                    },
-					{
-                        "phrase" : "יד",
-                        "heb" : "הנד",
-                        "eng" : "hand"
+                        "phrase": "ארון",
+                        "heb": "קלוזט",
+                        "eng": "closet"
                     }
                 ]
             ]
         },
         {
-            "image" : "22.jpg",
-            "text" : "הכנסתי אותו למיטה שלי." ,
-            "levels" : 
-			[
-                [
-                    {
-                        "phrase" : "מיטה",
-                        "heb" : "בד",
-                        "eng" : "bed"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "מיטה שלי",
-                        "heb" : "מיי בד",
-                        "eng" : "my bed"
-                    }
-                ],
-                [
-                    {
-                       "phrase" : "אותו",
-                        "heb" : "הים",
-                        "eng" : "him"
-                    },
-					 {
-                        "phrase" : "מיטה שלי",
-                        "heb" : "מיי בד",
-                        "eng" : "my bed"
-                    }
-                ]
-            ]
-        },
-		{
-            "image" : "23.jpg"
+            "image": "25.jpg"
         },
         {
-            "image" : "24.jpg",
-            "text" : "וסגרתי את הדלת של הארון." ,
-            "levels" : 
-			[
-                [
+            "image": "26.jpg",
+            "text": "אולי יש עוד פחדרון בארון, אבל במיטה שלי אין מקום לשלושה.",
+            "levels": [
+                [{
+                    "phrase": "אולי",
+                    "heb": "מייבי",
+                    "eng": "maybe"
+                }],
+                [{
+                        "phrase": "אולי",
+                        "heb": "מייבי",
+                        "eng": "maybe"
+                    },
                     {
-                        "phrase" : "דלת",
-                        "heb" : "דור",
-                        "eng" : "door"
+                        "phrase": "מיטה",
+                        "heb": "בד",
+                        "eng": "bed"
+                    },
+                    {
+                        "phrase": "ארון",
+                        "heb": "קלוזט",
+                        "eng": "closet"
                     }
                 ],
-                [
-                    {
-                       "phrase" : "דלת",
-                        "heb" : "דור",
-                        "eng" : "door"
+                [{
+                        "phrase": "אולי",
+                        "heb": "מייבי",
+                        "eng": "maybe"
                     },
-					 {
-                        "phrase" : "ארון",
-                        "heb" : "קלוזט",
-                        "eng" : "closet"
+                    {
+                        "phrase": "מיטה",
+                        "heb": "בד",
+                        "eng": "bed"
+                    },
+                    {
+                        "phrase": "ארון",
+                        "heb": "קלוזט",
+                        "eng": "closet"
+                    },
+                    {
+                        "phrase": "שלושה",
+                        "heb": "ט'רי",
+                        "eng": "three"
                     }
-                ]
+                ],
+                [{
+                        "phrase": "אולי",
+                        "heb": "מייבי",
+                        "eng": "maybe"
+                    },
+                    {
+                        "phrase": "מיטה",
+                        "heb": "בד",
+                        "eng": "bed"
+                    },
+                    {
+                        "phrase": "ארון",
+                        "heb": "קלוזט",
+                        "eng": "closet"
+                    },
+                    {
+                        "phrase": "שלושה",
+                        "heb": "ט'רי",
+                        "eng": "three"
+                    },
+                    {
+                        "phrase": "מקום",
+                        "heb": "ספייס",
+                        "eng": "space"
+                    }
+                 ]
             ]
-        },
-		{
-            "image" : "25.jpg"
-        },
-        {
-            "image" : "26.jpg",
-            "text" : "אולי יש עוד פחדרון בארון, אבל במיטה שלי אין מקום לשלושה." ,
-            "levels" : 
-			[
-                [
-                    {
-                        "phrase" : "אולי",
-                        "heb" : "מייבי",
-                        "eng" : "maybe"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "אולי",
-                        "heb" : "מייבי",
-                        "eng" : "maybe"
-                    },
-					{
-                        "phrase" : "מיטה",
-                        "heb" : "בד",
-                        "eng" : "bed"
-                    },
-					{
-                        "phrase" : "ארון",
-                        "heb" : "קלוזט",
-                        "eng" : "closet"
-                    }
-                ],
-                [
-                    {
-                        "phrase" : "אולי",
-                        "heb" : "מייבי",
-                        "eng" : "maybe"
-                    },
-					{
-                        "phrase" : "מיטה",
-                        "heb" : "בד",
-                        "eng" : "bed"
-                    },
-					{
-                        "phrase" : "ארון",
-                        "heb" : "קלוזט",
-                        "eng" : "closet"
-                    },
-					{
-                        "phrase" : "שלושה",
-                        "heb" : "ט'רי",
-                        "eng" : "three"
-                    }
-                ],
-				[
-                    {
-                        "phrase" : "אולי",
-                        "heb" : "מייבי",
-                        "eng" : "maybe"
-                    },
-					{
-                        "phrase" : "מיטה",
-                        "heb" : "בד",
-                        "eng" : "bed"
-                    },
-					{
-                        "phrase" : "ארון",
-                        "heb" : "קלוזט",
-                        "eng" : "closet"
-                    },
-					{
-                        "phrase" : "שלושה",
-                        "heb" : "ט'רי",
-                        "eng" : "three"
-                    },
-					{
-                        "phrase" : "מקום",
-                        "heb" : "ספייס",
-                        "eng" : "space"
-                    }
-                ]
-            ]
-        },
-        {
-            "image" : "27.jpg"
-        },
-		{
-            "image" : "28.jpg"
+        },{
+            "image": "28.jpg"
         }
     ]
+
 }

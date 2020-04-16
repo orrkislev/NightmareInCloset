@@ -14,14 +14,11 @@ $.getJSON( folder + "/texts.json", function( data ) {
   });
 
 function showTwoPage(pageIndex){
+    console.log("show two page",pageIndex,pages.length)
     page = pageIndex
-    $('#sideRight').show()
-    $('#sideLeft').show()
-    if (pageIndex==0){
-        $('#sideRight').hide()
-        showPage(0,"Left")
-    } else if (pageIndex == pages.length){
-        $('#sideLeft').hide()
+    $('#sideRight').hide()
+    $('#sideLeft').hide()
+    if (pageIndex == pages.length){
         showPage(pageIndex,"Right")
     } else {
         showPage(pageIndex,"Right")
@@ -30,7 +27,11 @@ function showTwoPage(pageIndex){
 }
 
 function showPage(pageNum, side){
-    $("#pageImage"+side).attr("src",folder + "/" + pages[pageNum].image);
+    if (pages[pageNum].image != undefined){
+        $('#side'+side).show()
+        $("#pageImage"+side).attr("src",folder + "/" + pages[pageNum].image);
+    }
+
 
     txt = pages[pageNum].text
     txtParts = []
