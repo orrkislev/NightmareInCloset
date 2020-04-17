@@ -1,6 +1,14 @@
 let pages, page=0, level, lang="heb"
 let folder = 'a'
 
+var bar = new ProgressBar.Line('#bar', {
+    strokeWidth: 1,
+    easing: 'easeInOut',
+    duration: 800,
+    color: '#FFEA82',
+  });
+$("#bar svg").attr("viewBox","0,0,100,3")
+
 
 $.getJSON( folder + "/texts.json", function( data ) {
     pages = data.texts
@@ -14,7 +22,6 @@ $.getJSON( folder + "/texts.json", function( data ) {
   });
 
 function showTwoPage(pageIndex){
-    console.log("show two page",pageIndex,pages.length)
     page = pageIndex
     $('#sideRight').hide()
     $('#sideLeft').hide()
@@ -24,6 +31,7 @@ function showTwoPage(pageIndex){
         showPage(pageIndex,"Right")
         showPage(pageIndex+1,"Left")
     }
+    bar.animate((pageIndex/2) / (Math.floor((pages.length-1)/2)))
 }
 
 function showPage(pageNum, side){
