@@ -1,5 +1,5 @@
-let pages, page=0, level, lang="heb"
-let folder = 'a'
+let pages, pageNum=0, level, lang="heb"
+let folder = 'giant'
 
 var bar = new ProgressBar.Line('#bar', {
     strokeWidth: 1,
@@ -8,6 +8,7 @@ var bar = new ProgressBar.Line('#bar', {
     color: '#FFEA82',
   });
 $("#bar svg").attr("viewBox","0,0,100,3")
+$("#slidecontainer").hide()
 
 
 $.getJSON( folder + "/texts.json", function( data ) {
@@ -18,26 +19,13 @@ $.getJSON( folder + "/texts.json", function( data ) {
             largestSumOfLevel = Math.max(largestSumOfLevel, page.levels.length)
     }
     $("#slider").attr('max',largestSumOfLevel-1)
-    showTwoPage(0)
+    showPage(pageNum)
   });
 
-function showTwoPage(pageIndex){
-    page = pageIndex
-    $('#sideRight').hide()
-    $('#sideLeft').hide()
-    if (pageIndex == pages.length){
-        showPage(pageIndex,"Right")
-    } else {
-        showPage(pageIndex,"Right")
-        showPage(pageIndex+1,"Left")
-    }
-    bar.animate((pageIndex/2) / (Math.floor((pages.length-1)/2)))
-}
-
-function showPage(pageNum, side){
+function showPage(pageNum){
+    bar.animate(pageNum/pages.length);
     if (pages[pageNum].image != undefined){
-        $('#side'+side).show()
-        $("#pageImage"+side).attr("src",folder + "/" + pages[pageNum].image);
+        $("#pageImage").attr("src",folder + "/" + pages[pageNum].image);
     }
 
 
@@ -53,7 +41,10 @@ function showPage(pageNum, side){
             txtParts = [{"text":txt, "special":false}]
         } else {
             level = Math.min(level,pages[pageNum].levels.length-1)
-            phrases = pages[pageNum].levels[level]
+            phrases = []
+            for (let i=level;i>=0;i--){
+                phrases.push(pages[pageNum].levels[i][0])
+            }
             rgx = ''
             phrases.forEach(phrase => {
                 rgx = rgx + "|" + phrase.phrase
@@ -88,21 +79,39 @@ function showPage(pageNum, side){
         }
         txtHtml += " "
     })
-    $("#text"+side).html(txtHtml)
+    $("#text").html(txtHtml)
 }
 
 updateSlider = ()=>{
-    showTwoPage(page)
+    showPage(pageNum)
+}
+
+nextPage = ()=>{
+    pageNum = (pageNum+1)%pages.length
+    showPage(pageNum)
+}
+
+lastPage = ()=>{
+    pageNum = (pageNum-1+pages.length) % pages.length
+    showPage(pageNum)
 }
 
 
 $(document).keydown(function(e) {
     if (e.which == 37){
-        page = (page+2) % pages.length
-        showTwoPage(page)
+        nextPage()
     } else if (e.which==39){
-        page = (page-2+pages.length) % pages.length
-        showTwoPage(page)
+        lastPage()
     }
     e.preventDefault(); // prevent the default action (scroll / move caret)
+});
+
+$('#overlay').click(function(e) {
+    if ($('#slidecontainer').is(":hidden")) {
+        $('#slidecontainer').show()
+        $('#slidecontainer').css("right",$(window).width()- e.pageX)
+        $('#slidecontainer').css("top",e.pageY)
+    } else {
+        $('#slidecontainer').hide()
+    }
 });
