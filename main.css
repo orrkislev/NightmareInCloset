@@ -20,7 +20,7 @@ body {
 
 #pageImage {
   position: absolute;
-  max-height:90%;
+  max-height:80%;
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
