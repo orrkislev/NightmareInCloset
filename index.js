@@ -13,12 +13,6 @@ $("#slidecontainer").hide()
 
 $.getJSON( folder + "/texts.json", function( data ) {
     pages = data.texts
-    largestSumOfLevel = 0
-    for (page of pages){
-        if (page.levels != undefined)
-            largestSumOfLevel = Math.max(largestSumOfLevel, page.levels.length)
-    }
-    $("#slider").attr('max',largestSumOfLevel-1)
     showPage(pageNum)
   });
 
@@ -35,12 +29,20 @@ function showPage(pageNum){
     if (txt!=undefined){
       if (pages[pageNum].levels == undefined){
         txtParts = [{"text":txt, "special":false}]
+        $("#slider").attr('max',0)
       } else {
         level = $("#slider").val()
         if (level==-1){
             txtParts = [{"text":txt, "special":false}]
         } else {
             level = Math.min(level,pages[pageNum].levels.length-1)
+            levelRelative = $("#slider").val() /  $("#slider").attr('max')
+            console.log(levelRelative)
+            levelRelative = Math.round(levelRelative * (pages[pageNum].levels.length-1))
+            $("#slider").attr('max',pages[pageNum].levels.length-1)
+            $("#slider").val(levelRelative)
+            level = levelRelative
+
             phrases = []
             for (let i=level;i>=0;i--){
                 phrases.push(pages[pageNum].levels[i][0])
@@ -77,7 +79,7 @@ function showPage(pageNum){
         } else {
             txtHtml += part.text
         }
-        txtHtml += " "
+        // txtHtml += " "
     })
     $("#text").html(txtHtml)
 }
@@ -88,11 +90,13 @@ updateSlider = ()=>{
 
 nextPage = ()=>{
     pageNum = (pageNum+1)%pages.length
+    $('#slidecontainer').hide()
     showPage(pageNum)
 }
 
 lastPage = ()=>{
     pageNum = (pageNum-1+pages.length) % pages.length
+    $('#slidecontainer').hide()
     showPage(pageNum)
 }
 
