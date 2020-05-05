@@ -37,7 +37,6 @@ function showPage(pageNum){
         } else {
             level = Math.min(level,pages[pageNum].levels.length-1)
             levelRelative = $("#slider").val() /  $("#slider").attr('max')
-            console.log(levelRelative)
             levelRelative = Math.round(levelRelative * (pages[pageNum].levels.length-1))
             $("#slider").attr('max',pages[pageNum].levels.length-1)
             $("#slider").val(levelRelative)
@@ -81,7 +80,9 @@ function showPage(pageNum){
         }
         // txtHtml += " "
     })
-    $("#text").html(txtHtml)
+    $("#pageImage").on("load",()=>{
+        $("#text").html(txtHtml)      
+    })
 }
 
 updateSlider = ()=>{
