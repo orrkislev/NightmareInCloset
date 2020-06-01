@@ -1,4 +1,4 @@
-$("#text").html(originalText)
+updatePage()
 
 levels = []
 for (let i=0;i<harryPotterWords.length;i+=2){
@@ -6,15 +6,23 @@ for (let i=0;i<harryPotterWords.length;i+=2){
 }
 $("#slider").attr('max',levels.length-1)
 
-function updateText() {
+function updatePage(){
+    allHtml = ""
+    originalTexts.forEach((txt)=>{
+        allHtml += "<div>"+getTranslatedTextHtml(txt)+"</div>"
+    })
+    $("#text").html(allHtml)
+}
+
+function getTranslatedTextHtml(txt) {
     txtParts = []
 
     level = $("#slider").val()
     if (level == -1) {
-        txtParts = [{ "text": originalText, "special": false }]
+        txtParts = [{ "text": txt, "special": false }]
     } else {
         phrases = []
-        for (let i = level; i >= 0; i--) {
+        for (let i = 0; i <= level; i++) {
             phrases.push(levels[i])
         }
         rgx = ''
@@ -24,7 +32,7 @@ function updateText() {
         rgx = rgx.substr(1)
         rgx = "(" + rgx + ")"
         rgx = new RegExp(rgx, 'g');
-        txt = originalText.split(rgx)
+        txt = txt.split(rgx)
         txt.forEach((part) => {
             txtParts.push({ "text": part, "special": false })
         })
@@ -47,7 +55,7 @@ function updateText() {
         }
         // txtHtml += " "
     })
-    $("#text").html(txtHtml)
+    return txtHtml
 }
 
 $('#overlay').click(function(e) {
