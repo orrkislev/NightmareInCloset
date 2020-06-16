@@ -36,7 +36,7 @@ const harryPotterWords = [
     "חתולה",
     "Katze",
     "מוזרות",
-    "komisch'",
+    "komisch",
     "יום",
     "tag",
     "מאוחר יותר",
