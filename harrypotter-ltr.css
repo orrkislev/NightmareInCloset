@@ -34,6 +34,11 @@ body {
     top:0;
   }
   
+    ::selection {
+  background: #FFEB3B; 
+  color:#2f2f2f;
+}
+  
   
    #slidecontainer {
     margin: 0 0;
@@ -41,26 +46,26 @@ body {
     top: 20%;
     right: 20%;
     height: 35px;
-    width: 18%;
+    width: 250px;
     transform: translateX(50%);
     z-index: 300;
     background-color: lightgray;
     box-shadow: gray 2px 2px 5px;
     border-radius: 1em;
-    padding: 3px 19px;
+    padding: 4px 15px;
   }
   
   #slider {
     -webkit-appearance: none;
-    width: 70%;
+    width: 63%;
     transform: translateX(0%);
     height: 5px;
     background: #ffffff;
     outline: none;
     opacity: 0.8;
     transition: opacity .2s;
-    margin-left:15px;
-    margin-right:15px;
+    margin-left:10px;
+    margin-right:10px;
     border-radius: 5px;
   }
   
