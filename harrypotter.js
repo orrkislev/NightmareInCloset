@@ -51,14 +51,14 @@ function getTranslatedTextHtml(txt) {
     txtHtml = ""
     txtParts.forEach((part) => {
         if (part.special) {
-            txtHtml += "<span class=special title=" + part.original + ">" + part.text + "</span>"
+            txtHtml += "<span class=special title='" + part.original + "'>" + part.text + "</span>"
         } else {
             txtHtml += part.text
         }
         // txtHtml += " "
     })
     return txtHtml
-}
+}   
 
 $('body').click(function(e) {
     if ($('#slidecontainer').is(":hidden")) {
