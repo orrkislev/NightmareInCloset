@@ -1,5 +1,4 @@
 let pages, pageNum=0, level, lang="heb"
-let folder = 'giant'
 
 var bar = new ProgressBar.Line('#bar', {
     strokeWidth: 1,
@@ -11,7 +10,7 @@ $("#bar svg").attr("viewBox","0,0,100,3")
 $("#slidecontainer").hide()
 
 
-$.getJSON( folder + "/texts.json", function( data ) {
+$.getJSON("texts.json", function( data ) {
     pages = data.texts
     showPage(pageNum)
   });
@@ -19,7 +18,7 @@ $.getJSON( folder + "/texts.json", function( data ) {
 function showPage(pageNum){
     bar.animate(pageNum/pages.length);
     if (pages[pageNum].image != undefined){
-        $("#pageImage").attr("src",folder + "/" + pages[pageNum].image);
+        $("#pageImage").attr("src",pages[pageNum].image);
     }
 
 
