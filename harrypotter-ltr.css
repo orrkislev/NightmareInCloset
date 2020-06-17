@@ -41,7 +41,7 @@ body {
     top: 20%;
     right: 20%;
     height: 35px;
-    width: 25%;
+    width: 18%;
     transform: translateX(50%);
     z-index: 300;
     background-color: lightgray;
@@ -52,7 +52,7 @@ body {
   
   #slider {
     -webkit-appearance: none;
-    width: 50%;
+    width: 70%;
     transform: translateX(0%);
     height: 5px;
     background: #ffffff;
@@ -92,6 +92,7 @@ body {
     font-family: 'Comfortaa';
     font-size:1rem;
     padding-top: 0.25em;
+	font-weight:bold;
   }
   #leftLabel{
     width:20%;
