@@ -171,6 +171,11 @@ body:after{
     margin-top: 4em;
     margin-bottom:5rem;
   }
+  
+  #text {
+    font-size: 2rem;
+  }
+  
   }
 
 @media screen and (min-width: 981px) {
