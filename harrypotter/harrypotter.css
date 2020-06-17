@@ -23,6 +23,7 @@ body {
   .special {
     font-weight: 600;
     color: #c15555;
+	text-decoration:underline;
   }
   
   #overlay{
@@ -46,7 +47,7 @@ body {
     top: 20%;
     right: 20%;
     height: 35px;
-    width: 250px;
+    width: 350px;
     transform: translateX(50%);
     z-index: 300;
     background-color: lightgray;
