@@ -35,31 +35,32 @@ body {
   }
   
   
-  #slidecontainer {
+   #slidecontainer {
     margin: 0 0;
     position: absolute;
     top: 20%;
     right: 20%;
-    height: 24px;
-    /* width: 30%; */
+    height: 35px;
+    width: 25%;
     transform: translateX(50%);
     z-index: 300;
     background-color: lightgray;
     box-shadow: gray 2px 2px 5px;
     border-radius: 1em;
-    padding: 4px 20px;
+    padding: 3px 19px;
   }
   
   #slider {
     -webkit-appearance: none;
     width: 50%;
-    transform: translateX(-10%);
+    transform: translateX(0%);
     height: 5px;
     background: #ffffff;
     outline: none;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: opacity .2s;
     margin-left:15px;
+    margin-right:15px;
     border-radius: 5px;
   }
   
