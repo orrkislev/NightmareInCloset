@@ -12,6 +12,7 @@ function updatePage(){
         allHtml += "<div>"+getTranslatedTextHtml(txt)+"</div>"
     })
     $("#text").html(allHtml)
+    $('.special').tooltip()
 }
 
 function getTranslatedTextHtml(txt) {
@@ -34,7 +35,7 @@ function getTranslatedTextHtml(txt) {
         rgx = new RegExp(rgx, 'g');
         txt = txt.split(rgx)
         txt.forEach((part) => {
-            txtParts.push({ "text": part, "special": false })
+            txtParts.push({ "text": part, "special": false, 'original':null })
         })
 
         phrases.forEach(phrase => {
@@ -42,6 +43,7 @@ function getTranslatedTextHtml(txt) {
                 if (part.text == phrase[0]) {
                     part.text = phrase[1]
                     part.special = true
+                    part.original = phrase[0]
                 }
             })
         });
@@ -49,7 +51,7 @@ function getTranslatedTextHtml(txt) {
     txtHtml = ""
     txtParts.forEach((part) => {
         if (part.special) {
-            txtHtml += "<span class=special>" + part.text + "</span>"
+            txtHtml += "<span class=special title=" + part.original + ">" + part.text + "</span>"
         } else {
             txtHtml += part.text
         }
@@ -58,7 +60,7 @@ function getTranslatedTextHtml(txt) {
     return txtHtml
 }
 
-$('#overlay').click(function(e) {
+$('body').click(function(e) {
     if ($('#slidecontainer').is(":hidden")) {
         $('#slidecontainer').show()
         $('#slidecontainer').css("right",$(window).width()- e.pageX)
