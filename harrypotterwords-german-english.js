@@ -1,8 +1,8 @@
 const harryPotterWords = [
-    "Mr.",
-    "Herr",
     "Mrs.",
     "frau",
+	"Mr.",
+    "Herr",
     "number",
     "nummer",
     "four",
