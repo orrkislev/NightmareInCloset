@@ -141,7 +141,7 @@ body:after{
     left:0;
 }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 980px) {
   .alert {
   padding: 20px;
   background-color: #f44336; /* Red */
@@ -163,7 +163,7 @@ body:after{
 }
   }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 981px) {
   .alert {
   display:none;
   }
