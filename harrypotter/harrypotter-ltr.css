@@ -161,6 +161,13 @@ body:after{
   cursor: pointer;
   transition: 0.3s;
 }
+
+#textContainer{
+    width: 85%;
+    margin:auto;
+    margin-top: 4em;
+    margin-bottom:5rem;
+  }
   }
 
 @media screen and (min-width: 981px) {
